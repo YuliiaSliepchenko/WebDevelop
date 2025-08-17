@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItEnAi - Курс Веб-розробки для Дітей</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <!-- Логотип школи -->
+                <div class="logo">
+                    <h1 class="logo-text">
+                        <span class="logo-it">ItEn</span><span class="logo-ai">Ai</span>
+                    </h1>
+                    <div class="logo-icons">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="16,18 22,12 16,6"></polyline>
+                            <polyline points="8,6 2,12 8,18"></polyline>
+                        </svg>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Основний заголовок -->
+                <h2 class="hero-title">
+                    КУРС<br>
+                    <span class="highlight">ВЕБРОЗРОБКА</span><br>
+                    <span class="subtitle">для дітей</span>
+                </h2>
+
+                <!-- Підзаголовок -->
+                <p class="hero-description">
+                    Допоможемо дитині стати <span class="text-highlight">професійним веб-розробником</span> і 
+                    підкорити <span class="text-accent">HTML, CSS та JavaScript</span>
+                </p>
+
+                <!-- Ключові характеристики -->
+                <div class="hero-features">
+                    <div class="feature-card">
+                        <div class="feature-number">24 уроки</div>
+                        <div class="feature-text">12 тижнів навчання</div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-number orange">9-15 років</div>
+                        <div class="feature-text">Оптимальний вік</div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-number yellow">Власний сайт</div>
+                        <div class="feature-text">Фінальний проєкт</div>
+                    </div>
+                </div>
+
+                <!-- Кнопка реєстрації -->
+                <button class="cta-button" onclick="scrollToRegistration()">
+                    ЗАПИСАТИСЬ НА ПРОБНЕ ЗАНЯТТЯ
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Course Section -->
+    <section class="about-course">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    По <span class="highlight">завершенню</span> курсу<br>
+                    дитина <span class="highlight">навчиться</span>
+                </h2>
+                <p class="section-description">
+                    Наш курс розроблений спеціально для дітей та підлітків, 
+                    щоб зробити навчання веб-розробки цікавим та ефективним
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon blue">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="m2,12 a10,10 0 0,1 20,0 a10,10 0 0,1 -20,0"></path>
+                        </svg>
+                    </div>
+                    <h3>HTML основи</h3>
+                    <p>Вивчаємо структуру веб-сторінок, теги та семантичну розмітку</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon purple">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                    </div>
+                    <h3>CSS стилізація</h3>
+                    <p>Створюємо красиві дизайни, адаптивну верстку та анімації</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon green">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="16,18 22,12 16,6"></polyline>
+                            <polyline points="8,6 2,12 8,18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>JavaScript логіка</h3>
+                    <p>Додаємо інтерактивність та динамічну поведінку сайтів</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon red">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </div>
+                    <h3>Власний проєкт</h3>
+                    <p>Створюємо повноцінний сайт та публікуємо його онлайн</p>
+                </div>
+            </div>
+
+            <!-- Статистика успіху -->
+            <div class="success-stats">
+                <div class="stat-item">
+                    <div class="stat-number">90%</div>
+                    <div class="stat-text">учнів завершують курс</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-text">створюють власний сайт</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">85%</div>
+                    <div class="stat-text">продовжують вивчати програмування</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Program Section -->
+    <section class="course-program">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Навчальна <span class="highlight">програма</span>
+                </h2>
+                <p class="section-description">
+                    Курс складається з <span class="text-accent">4 модулів</span>. 
+                    Кожен модуль розрахований на конкретний <span class="text-accent">вік та рівень</span>
+                </p>
+            </div>
+
+            <div class="program-blocks">
+                <!-- Блок 1 -->
+                <div class="program-block">
+                    <button class="block-header" onclick="toggleBlock(1)">
+                        <div class="block-info">
+                            <div class="block-icon blue">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14,2 14,8 20,8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>1 модуль. Знайомство з HTML</h3>
+                                <p>6 уроків</p>
+                            </div>
+                        </div>
+                        <svg class="chevron" id="chevron-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="block-content" id="content-1">
+                        <div class="lessons-list">
+                            <h4>Що вивчаємо:</h4>
+                            <ul>
+                                <li><span>1.</span>Що таке сайт? Як він працює. Що таке HTML.</li>
+                                <li><span>2.</span>Основні теги: &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, &lt;p&gt;, &lt;h1&gt;–&lt;h6&gt;, &lt;br&gt;, &lt;hr&gt;</li>
+                                <li><span>3.</span>Створюємо структуру сайту: заголовки, абзаци, лінії</li>
+                                <li><span>4.</span>Зображення та посилання: &lt;img&gt;, &lt;a&gt;, атрибути href, src, alt</li>
+                                <li><span>5.</span>Списки, таблиці, розмітка контенту</li>
+                                <li><span>6.</span>Практика: створюємо просту сторінку «Про мене»</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Блок 2 -->
+                <div class="program-block">
+                    <button class="block-header" onclick="toggleBlock(2)">
+                        <div class="block-info">
+                            <div class="block-icon purple">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>2 модуль. Основи CSS</h3>
+                                <p>6 уроків</p>
+                            </div>
+                        </div>
+                        <svg class="chevron" id="chevron-2" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="block-content" id="content-2">
+                        <div class="lessons-list">
+                            <h4>Що вивчаємо:</h4>
+                            <ul>
+                                <li><span>1.</span>Що таке CSS. Способи підключення стилів</li>
+                                <li><span>2.</span>Кольори, фон, рамки, відступи, шрифти</li>
+                                <li><span>3.</span>Позиціонування елементів, display: block/inline/flex</li>
+                                <li><span>4.</span>Flexbox: створюємо адаптивні блоки</li>
+                                <li><span>5.</span>Селектори, псевдокласи, hover-ефекти</li>
+                                <li><span>6.</span>Практика: створюємо власну сторінку з унікальним дизайном</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Блок 3 -->
+                <div class="program-block">
+                    <button class="block-header" onclick="toggleBlock(3)">
+                        <div class="block-info">
+                            <div class="block-icon yellow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>3 модуль. JavaScript – перші кроки</h3>
+                                <p>6 уроків</p>
+                            </div>
+                        </div>
+                        <svg class="chevron" id="chevron-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="block-content" id="content-3">
+                        <div class="lessons-list">
+                            <h4>Що вивчаємо:</h4>
+                            <ul>
+                                <li><span>1.</span>Що таке JavaScript і навіщо він потрібен</li>
+                                <li><span>2.</span>Змінні, операції, типи даних</li>
+                                <li><span>3.</span>Події: onClick, onHover. Взаємодія з кнопками</li>
+                                <li><span>4.</span>Алгоритми: умовні оператори, цикли</li>
+                                <li><span>5.</span>Маніпуляції DOM: document.getElementById, innerHTML</li>
+                                <li><span>6.</span>Практика: інтерактивна сторінка з кнопками, які змінюють контент</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Блок 4 -->
+                <div class="program-block">
+                    <button class="block-header" onclick="toggleBlock(4)">
+                        <div class="block-info">
+                            <div class="block-icon green">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path d="m2,12 a10,10 0 0,1 20,0 a10,10 0 0,1 -20,0"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>4 модуль. Повноцінний сайт</h3>
+                                <p>6 уроків</p>
+                            </div>
+                        </div>
+                        <svg class="chevron" id="chevron-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="block-content" id="content-4">
+                        <div class="lessons-list">
+                            <h4>Що вивчаємо:</h4>
+                            <ul>
+                                <li><span>1.</span>Планування сайту: тема, ціль, структура</li>
+                                <li><span>2.</span>Розробка головної сторінки</li>
+                                <li><span>3.</span>Створення внутрішніх сторінок: "Про нас", "Контакти"</li>
+                                <li><span>4.</span>Адаптація під мобільні пристрої</li>
+                                <li><span>5.</span>Анімації, ефекти, останні штрихи</li>
+                                <li><span>6.</span>Презентація та демонстрація фінального сайту + сертифікат</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Підсумкова інформація -->
+            <div class="course-summary">
+                <h3>По завершенню курсу кожен учень отримує</h3>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <h4>🏆 Сертифікат</h4>
+                        <p>Офіційний документ про завершення курсу</p>
+                    </div>
+                    <div class="summary-item">
+                        <h4>🌐 Власний сайт</h4>
+                        <p>Повноцінний проєкт для портфоліо</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Чому обирають <span class="highlight">ItEnAi</span>?
+                </h2>
+                <p class="section-description">
+                    Ми створили ідеальні умови для навчання веб-розробки, 
+                    щоб ваша дитина отримала максимум користі від кожного заняття
+                </p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Індивідуальний підхід</h3>
+                    <p>Невеликі групи до 6 учнів для максимальної уваги кожному</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12,6 12,12 16,14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Гнучкий розклад</h3>
+                    <p>Обираєте зручний час для онлайн або офлайн занять</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3>Сучасні технології</h3>
+                    <p>Навчаємо на актуальних інструментах та платформах</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                            <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+                        </svg>
+                    </div>
+                    <h3>Підтримка 24/7</h3>
+                    <p>Завжди готові допомогти з домашніми завданнями</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 15l-8.5-8.5a2.8 2.8 0 1 1 4-4L12 7l4.5-4.5a2.8 2.8 0 1 1 4 4L12 15z"></path>
+                        </svg>
+                    </div>
+                    <h3>Досвідчені викладачі</h3>
+                    <p>Практикуючі розробники з багаторічним досвідом</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                            <path d="M4 22h16"></path>
+                            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                            <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"></path>
+                        </svg>
+                    </div>
+                    <h3>Гарантія результату</h3>
+                    <p>Повернемо кошти, якщо не досягнете цілей курсу</p>
+                </div>
+            </div>
+
+            <!-- Додаткова інформація -->
+            <div class="fact-block">
+                <h3>ФАКТ ПРО ITENAI</h3>
+                <div class="fact-stat">
+                    <span class="fact-number">90%</span> 
+                    <span class="fact-text">учнів</span> 
+                    <span class="fact-number">рекомендують</span>
+                </div>
+                <p>наші курси друзям та однокласникам</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How To Start Section -->
+    <section class="how-to-start">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Як <span class="highlight">почати</span> займатись в<br>
+                    <span class="highlight">ItEnAi</span>
+                </h2>
+            </div>
+
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                        <div class="step-text">
+                            <h3>Заповнюєте заявку на сайті</h3>
+                            <p>Ми зв'язуємось з Вами і записуємо дитину на безкоштовне вступне заняття</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <polyline points="16,11 18,13 22,9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="step-text">
+                            <h3>Проводимо пробне заняття</h3>
+                            <p>Познайомимось та визначимо рівень знань. Ви побачите як проходять заняття. Складемо індивідуальний план навчання</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <div class="step-text">
+                            <h3>Погоджуємо розклад та ціну навчання</h3>
+                            <p>Ви знаєте скільки занять необхідно Вашій дитині та оплачуєте їх по мірі необхідності</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-center">
+                <button class="cta-button" onclick="scrollToRegistration()">
+                    ЗАЛИШИТИ ЗАЯВКУ
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Відгуки <span class="highlight">батьків</span>
+                </h2>
+                <p class="section-description">
+                    Понад 500 дітей вже навчались веб-розробки в нашій школі. 
+                    Ось що кажуть їхні батьки та самі учні
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="quote-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+                            <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                        </svg>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://pub-cdn.sider.ai/u/U0Y3H2XG568/web-coder/6883afccf2d3a0ac8dc3c1a6/resource/896d1068-f973-49d5-8d76-9762124d166a.jpg" alt="Оксана Курська">
+                        <div class="author-info">
+                            <h4>Оксана Курська</h4>
+                            <p>Мама учня</p>
+                            <div class="stars">
+                                <span>★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Дуже задоволена навчанням в ItEnAi! Мій син за 3 місяці навчання створив власний сайт про свої хобі. Викладачі дуже терплячі та професійні."
+                    </p>
+                    <div class="testimonial-highlight">
+                        Рекомендую ItEnAi всім батькам!
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="quote-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+                            <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                        </svg>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://pub-cdn.sider.ai/u/U0Y3H2XG568/web-coder/6883afccf2d3a0ac8dc3c1a6/resource/e7c520b0-5c85-419f-90cb-ee7896d3e8c3.jpg" alt="Марія Петренко">
+                        <div class="author-info">
+                            <h4>Марія Петренко</h4>
+                            <p>Мама учениці</p>
+                            <div class="stars">
+                                <span>★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Моя дочка завжди мріяла створювати сайти. Після курсу в ItEnAi вона не тільки навчилась програмувати, але й знайшла своє покликання."
+                    </p>
+                    <div class="testimonial-highlight">
+                        Дуже якісне навчання за доступною ціною
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="quote-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+                            <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                        </svg>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://pub-cdn.sider.ai/u/U0Y3H2XG568/web-coder/6883afccf2d3a0ac8dc3c1a6/resource/17e59f91-1a22-4075-a022-bfe45c6e8950.jpg" alt="Андрій Коваленко">
+                        <div class="author-info">
+                            <h4>Андрій Коваленко</h4>
+                            <p>Учень, 14 років</p>
+                            <div class="stars">
+                                <span>★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Круто, що можна створювати сайти самому! Наш викладач пояснює все зрозуміло. Зараз роблю сайт для своєї команди з кіберспорту."
+                    </p>
+                    <div class="testimonial-highlight">
+                        Хочу стати веб-розробником!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Додаткова статистика -->
+            <div class="testimonials-stats">
+                <div class="stat-item">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-text">Випускників</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4.5/5</div>
+                    <div class="stat-text">Середня оцінка</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">90%</div>
+                    <div class="stat-text">Рекомендують друзям</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3 роки</div>
+                    <div class="stat-text">Досвіду навчання</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section id="registration" class="registration">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Розпочніть із запису на<br>
+                    <span class="highlight">БЕЗОПЛАТНЕ</span> пробне заняття
+                </h2>
+                <p class="section-description">
+                    Ваша дитина буде <span class="text-highlight">задоволена навчанням</span>, а 
+                    Ви — <span class="text-accent">результатом</span>.
+                </p>
+            </div>
+
+            <div class="form-container">
+                <form id="registrationForm" class="registration-form">
+                    <div class="form-group">
+                        <label for="name">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            Ваше ім'я
+                        </label>
+                        <input type="text" id="name" name="name" placeholder="Введіть Ваше ім'я" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            Номер телефону
+                        </label>
+                        <input type="tel" id="phone" name="phone" placeholder="+380 (99) 999-99-99" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            Ваш E-mail
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="Введіть Ваш E-mail" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="childAge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            Вік дитини
+                        </label>
+                        <input type="number" id="childAge" name="childAge" min="9" max="18" placeholder="Скільки років дитині?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            Додаткові побажання (необов'язково)
+                        </label>
+                        <textarea id="message" name="message" placeholder="Розкажіть про цілі навчання або особливі побажання..." rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        <span class="button-text">ЗАЛИШИТИ ЗАЯВКУ</span>
+                        <div class="loading-spinner" style="display: none;">
+                            <div class="spinner"></div>
+                            <span>Відправляємо...</span>
+                        </div>
+                    </button>
+
+                    <p class="form-disclaimer">
+                        Натискаючи кнопку "Залишити заявку", Ви погоджуєтеся з 
+                        <a href="#">"Політикою конфіденційності"</a>
+                    </p>
+                </form>
+
+                <!-- Success Message -->
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <div class="success-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Дякуємо за заявку!</h3>
+                    <p>
+                        Наш менеджер зв'яжеться з Вами найближчим часом для узгодження 
+                        дати та часу безкоштовного пробного заняття.
+                    </p>
+                    <div class="next-steps">
+                        <h4>Що далі?</h4>
+                        <ul>
+                            <li>✅ Дзвінок менеджера протягом 30-60 хвилин</li>
+                            <li>✅ Призначення дати пробного заняття</li>
+                            <li>✅ Надсилання посилання на онлайн-урок</li>
+                            <li>✅ Індивідуальний план навчання</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Логотип та опис -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3><span class="logo-it">ItEn</span><span class="logo-ai">Ai</span></h3>
+                        <p>Онлайн школа програмування для дітей та підлітків</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Telegram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Швидкі посилання -->
+                <div class="footer-section">
+                    <h4>Навігація</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Про школу</a></li>
+                        <li><a href="#">Курси</a></li>
+                        <li><a href="#">Викладачі</a></li>
+                        <li><a href="#">Відгуки</a></li>
+                        <li><a href="#">Контакти</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                </div>
+
+                <!-- Контактна інформація -->
+                <div class="footer-section footer-contacts">
+                    <h4>
+                        Залишились питання?<br>
+                        Звертайтеся, ми з радістю надамо на них відповіді:
+                    </h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg class="contact-icon green" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <div>
+                                <a href="tel:+380931480344">+38(093)1480344</a>
+                                <p>(Viber, WhatsApp, Telegram)</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="contact-icon blue" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <div>
+                                <a href="tel:+380931480344">+38(093)1480344</a>
+                                <p>(для зв'язку з менеджером)</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="contact-icon red" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <div>
+                                <a href="mailto:study@itenai.com.ua">schoolitenai@gmail.com</a>
+                                <p>Офіційна пошта школи</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-legal">
+                        <a href="#">Політика конфіденційності</a>
+                        <a href="#">Договір-оферта</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Нижня частина футера -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2024 ItEnAi. Усі права захищені.
+                </div>
+                <button class="scroll-top" onclick="scrollToTop()">
+                    ↑ Нагору
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
