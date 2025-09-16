@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
         <div class="container">
@@ -76,7 +76,7 @@
     </section>
 
     <!-- About Course Section -->
-    <section class="about-course">
+    <section id="about" class="about-course">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">
@@ -152,7 +152,7 @@
     </section>
 
     <!-- Course Program Section -->
-    <section class="course-program">
+    <section id="course-program" class="course-program">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">
@@ -487,7 +487,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials">
+    <section id="testimonial" class="testimonials">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">
@@ -744,17 +744,16 @@
                 <div class="footer-section">
                     <h4>Навігація</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Про школу</a></li>
-                        <li><a href="#">Курси</a></li>
-                        <li><a href="#">Викладачі</a></li>
-                        <li><a href="#">Відгуки</a></li>
-                        <li><a href="#">Контакти</a></li>
-                        <li><a href="#">Блог</a></li>
+                        <li><a href="#about">Про школу</a></li>
+                        <li><a href="#course-program">Курси</a></li>
+                        <li><a href="#testimonial">Відгуки</a></li>
+                        <li><a href="#registration">Замовити Урок</a></li>
+                        <li><a href="#hero">Головна ↑</a></li>
                     </ul>
                 </div>
 
                 <!-- Контактна інформація -->
-                <div class="footer-section footer-contacts">
+                <div id="contacts" class="footer-section footer-contacts">
                     <h4>
                         Залишились питання?<br>
                         Звертайтеся, ми з радістю надамо на них відповіді:
@@ -789,10 +788,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="footer-legal">
-                        <a href="./privacy.html">Договір-оферта</a>
-                    </div>
                 </div>
             </div>
 
@@ -801,9 +796,9 @@
                 <div class="footer-copyright">
                     © 2025 ItEnAi. Усі права захищені.
                 </div>
-                <button class="scroll-top" onclick="scrollToTop()">
-                    ↑ Нагору
-                </button>
+               <div class="footer-legal">
+                        <a href="./privacy.html">Договір-оферта</a>
+                    </div>
             </div>
         </div>
     </footer>
