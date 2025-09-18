@@ -171,6 +171,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   gap: 1rem;
   color: var(--secondary-yellow);
+  padding: 10px;
 }
 
 .hero-title {
@@ -1003,10 +1004,22 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-tertiary);
   margin-bottom: 1.5rem;
 }
-
+.footer-logos {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    text-decoration: none;
+}
+.header-logos {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    text-decoration: none;
+}
 .social-links {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 
 .social-links a {
