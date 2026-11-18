@@ -1182,21 +1182,14 @@ h1, h2, h3, h4, h5, h6 {
 /* >=1024px — рівно 3 колонки */
 @media (min-width: 1024px) {
   .features-grid {
-    display: block;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
-/* >=1440px — останній елемент по центру, тільки коли він «самотній» (позиція 3n+1) */
+/* >=1440px — зберігаємо рівномірну сітку з трьох колонок */
 @media (min-width: 1440px) {
   .features-grid {
-    display: block;
-  }
-
-  /* Центруємо ЛИШЕ якщо останній елемент припадає на першу колонку нового ряду
-     (тобто 4-й, 7-й, 10-й, ...) */
-  .features-grid > .feature-card:last-child:nth-child(3n+1) {
-    grid-column: 2; /* ставимо в середню колонку */
-   
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 .scroll-top {
